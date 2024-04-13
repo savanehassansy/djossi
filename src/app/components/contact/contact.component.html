@@ -1,0 +1,49 @@
+<div class="py-12 px-72 bg-primary ">
+  <!-- contact -->
+  <h1 class="font-medium text-font_primary text-4xl mb-1">Contact Me</h1>
+  <p class="text-lg text-font_secondary">
+    Thank you for visiting my portfolio. I am currently [open for hire]. Reach
+    out to me by my email or visit my LinkedIn profile to send me a message.
+  </p>
+
+  <!-- name -->
+  <h1 class="font-medium text-font_primary text-2xl mt-8 mb-1">Name</h1>
+  <p class="text-lg text-font_secondary">Youngwoo Kim</p>
+
+  <!-- language -->
+  <h1 class="font-medium text-font_primary text-2xl mt-8 mb-1">Languages I Speak</h1>
+  <p class="text-lg text-font_secondary">
+    English (native speaker proficiency), Korean (native)
+  </p>
+
+  <!-- timezone -->
+  <h1 class="font-medium text-font_primary text-2xl mt-8 mb-1">My Timezone</h1>
+  <p class="text-lg text-font_secondary">Asia/Seoul (UTC+09:00)</p>
+
+  <!-- external links -->
+  <h1 class="font-medium text-font_primary text-2xl mt-8 mb-4">External Links</h1>
+
+<!-- start flex -->
+  <div class="flex" >
+
+    <div *ngFor="let item of contact">
+       <div class="bg-secondary p-6 flex justify-between items-center rounded-lg mr-4 transition-all  hover:scale-105  duration-700 hover:bg-gradient-to-br hover:from-pink-500 hover:to-yellow-500">
+      <div class="mr-24">
+        <h4 class="font-medium text-xl text-font_primary">{{item.title}}</h4>
+        <div class="mt-4 flex text-sm text-font_secondary">
+          <img
+            class="mr-2 w-[20px]"
+            src="{{item.icon}}"
+            alt=""
+          />
+          <span>{{item.subtitle}}</span>
+        </div>
+      </div>
+      <img src="{{item.arrowIcon}}" width="20px" alt="" />
+    </div>
+    </div>
+
+
+     </div>
+  <!-- end flex -->
+</div>

@@ -1,0 +1,74 @@
+<!-- <div class="flex justify-between items-center py-8 px-8 bg-sky-950">
+<div>
+  <h1>Lorem ipsum</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis id amet, suscipit </p>
+  <div class="pt-24">
+    <button class="rounded-lg font-medium bg-white py-2 px-6 mr-4" >Portofolio</button>
+    <button class="rounded-lg font-medium bg-none border-2 border-white py-2 px-6 text-white" >Contact me</button>
+  </div>
+</div>
+</div> -->
+
+<!-- <div *ngIf="showCarousel" class="flex justify-center items-center">
+  <div class="h-64 w-full sm:w-3/4 md:w-1/2 lg:w-2/3 overflow-hidden">
+    <div class="slick-carousel slick-vertical">
+      <div *ngFor="let image of images" class="slick-slide">
+        <img [src]="image.img" alt="Slide">
+      </div>
+    </div>
+  </div>
+</div>
+<button (click)="toggleCarousel()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">
+  Voir les autres photos
+</button> -->
+
+<!-- <div class="h-screen flex flex-col items-center justify-center">
+  <div class="overflow-y-auto">
+    <div class="flex flex-col items-center">
+      <ng-container *ngFor="let image of images">
+        <img [src]="image.img" alt="Slide" class="my-4">
+      </ng-container>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="overflow-hidden w-full  p-16"  >
+  <div class="overflow-x-auto flex">
+     <ng-container *ngFor="let image of images">
+    <div class="bg-yellow-100 mx-4  flex-grow-0 flex-shrink-0 flex-auto hover:scale-110 transition-all">
+       <img [src]="image.img" alt="Slide" class="">
+    </div>
+  </ng-container>
+  </div>
+
+</div>
+ -->
+<div class="overflow-hidden w-[58%] py-16 mx-auto">
+  <div class="overflow-x-auto flex carousel px-10 py-10 #carousel"#carousel [@carouselAnimation]="scrollLeftValue" (scroll)="onScroll($event)" [style.scrollLeft]="scrollLeftValue">
+    <ng-container *ngFor="let image of images">
+      <div
+        class="flex-grow-0 flex-shrink-0 flex-auto overflow-hidden border border-gray-400 mx-4 bg-auto rounded-2xl transition-all hover:scale-110 hover:shadow-lg hover:border-none"
+      >
+        <div class="h-4/5 hover:h-[45%]  w-[320px] bg-slate-500">
+          <img
+            [src]="image.img"
+            alt="Slide"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="m-4 hover:h-[55%]">
+          <div class="flex justify-between">
+            <div>
+              <p>Paris, France</p>
+            </div>
+            <div>
+              <p>Prix: €750</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<button (click)="scrollLeft()" class="px-4 py-2 bg-blue-500 text-white">Précédent</button>
+<button (click)="scrollRight()" class="px-4 py-2 bg-blue-500 text-white">Suivant</button>

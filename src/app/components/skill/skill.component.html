@@ -1,0 +1,36 @@
+<div class="px-72 py-32 bg-primary">
+  <h1 class="text-3xl font-medium mb-8 text-font_primary">Skillsets</h1>
+  <!-- Proficent -->
+  <h1 class="font-medium text-2xl mb-5 text-font_secondary">Proficient</h1>
+  <div *ngFor="let item of Preficient">
+    <div class="rounded p-4 mb-3 flex justify-between bg-secondary items-center transition-all  hover:scale-105  duration-700">
+      <div class="flex items-center">
+        <img class="mr-4" src="{{ item.img }}" width="27" alt="" />
+        <span class="font-medium text-lg text-font_primary cursor-pointer hover:underline ">{{ item.title }}</span>
+        <span class="text-xs ml-4 text-font_secondary cursor-pointer">{{ item.subtitle }}</span>
+      </div>
+      <span>rating</span>
+    </div>
+  </div>
+
+  <!-- moderate -->
+  <div class="text-gradient-to-r from-blue-500 to-emerald-500">
+  Votre texte avec dégradé de couleur
+</div>
+  <h1 class="font-medium text-2xl mb-5 text-font_secondary !mt-12">Moderate</h1>
+  <div class="grid grid-cols-4 gap-2">
+    <div *ngFor="let item of moderate">
+      <div
+        class="rounded p-3 mr-3 !flex !justify-between bg-secondary items-center transition-all  hover:scale-105  duration-700"
+      >
+        <div class="flex items-center">
+          <img class="mr-4" src="{{ item.img }}" width="27" alt="" />
+          <span class="font-medium text-lg text-font_primary cursor-pointer hover:underline ">{{ item.title }}</span>
+        </div>
+        <span>rating</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Basic #121C33 -->
+</div>

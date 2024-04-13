@@ -1,0 +1,14 @@
+<div class="py-32  bg-primary">
+  <h1 class="text-3xl px-72 font-medium mb-8 text-font_primary">Project</h1>
+ <div *ngFor="let item of projects">
+  <div class="bg-secondary flex justify-between px-72 items-center py-5 my-8 transition-all hover:scale-110 hover:-translate-y-1    duration-700">
+    <div class="">
+      <span class="font-medium text-4xl text-font_primary">{{item.title}}</span>
+      <p class="text-lg  text-font_secondary">{{item.description}}</p>
+      <a href="" class="text-sm text-violet-600 font-medium hover:underline">View more</a>
+    </div>
+    <img class="w-[300px]" src="{{item.img}}" alt="">
+  </div>
+ </div>
+
+</div>

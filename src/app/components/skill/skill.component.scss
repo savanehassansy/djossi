@@ -1,0 +1,5 @@
+.gradient-text {
+  background-image: linear-gradient(to right, #007bff, #28a745); /* Dégradé de couleur */
+  -webkit-background-clip: text; /* Appliquer le dégradé au texte */
+  color: transparent; /* Rendre le texte transparent */
+}

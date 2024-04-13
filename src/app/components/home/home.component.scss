@@ -1,0 +1,27 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Pour les navigateurs basés sur WebKit comme Safari */
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  // width: 100%;
+  // scroll-snap-align: start;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.carousel-transition {
+  transition: scroll-left 0.5s ease-in-out; /* Ajout de la transition pour smooth scrolling */
+}
+
+.carousel-transition {
+  transition: scroll-right 0.5s ease-in-out; /* Ajout de la transition pour smooth scrolling */
+}
